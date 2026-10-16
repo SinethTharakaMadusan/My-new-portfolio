@@ -1,0 +1,15 @@
+YOUTUBE VIDEOS FEATURE - INSTALL
+1. Import database/videos.sql (phpMyAdmin > SQL tab, or: mysql -u USER -p DBNAME < database/videos.sql)
+2. Copy files to the same paths in your project:
+     database/videos.sql           (new, only for importing)
+     includes/videos_section.php   (new)
+     admin/videos.php              (new)
+     admin/_header.php             (replaces yours: one nav entry added)
+     main.css                      (replaces yours: video styles appended at the end)
+3. Replace the PUBLIC index.php (site root, not admin/) with the supplied index.php (already contains the videos include line).
+4. Make sure uploads/ is writable by the web server.
+5. Admin > YouTube Videos > + Add.
+
+PROJECTS "SEE MORE" (4 cards first)
+- Just replace main.css and main.js. No index.php edit is needed: the script hides cards after the 4th
+  inside #projects and adds the See more button itself. Hard refresh (Ctrl+F5) after uploading.
